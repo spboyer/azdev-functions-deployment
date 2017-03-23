@@ -34,3 +34,14 @@ Example parameters
    }
  }
 ```
+
+Deploy using parameters file
+
+```javascript
+az group create --name MyResourceGroup --location "East US"
+ az group deployment create \
+     --name MyDeployment \
+     --resource-group MyResourceGroup \
+     --template-file azuredeploy.json \
+     --parameters @parameters.json
+```
