@@ -55,5 +55,5 @@ az group create --name MyResourceGroup --location "East US"
      --name MyDeployment \
      --resource-group MyResourceGroup \
      --template-file azuredeploy.json \
-     --parameters '{"appName":{"value": "myfunckytestdeploy"},"storageAccountType":{"value":"Standard_LRS"},"repoURL":{"value":"https://github.com/spboyer/azdev-superhero-api.git"},"branch":{"value":"master"},"location":{"value": "East US"}}'
+     --parameters '{"appName":{"value":"myfunckytestdeploy"},"storageAccountType":{"value":"Standard_LRS"},"repoURL":{"value":"https://github.com/spboyer/azdev-superhero-api.git"},"branch":{"value":"master"},"location":{"value":"East US"}}'
      ```
