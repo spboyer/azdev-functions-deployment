@@ -60,10 +60,16 @@
             "type": "Microsoft.Web/serverfarms",
             "location": "[variables('storageLocation')]",
             "sku": {
-                "name": "B1",
-                "tier": "Basic"
+                "name": "Y1",
+                "tier": "Dynamic",
+                "size": "Y1",
+                "family": "Y",
+                "capacity": 0
             },
-            "properties": {}
+            "properties": {
+                "name": "[variables('appServicePlanName')]",
+                "numberOfWorkers": 0
+            }
         },
         {
             "apiVersion": "2015-08-01",
