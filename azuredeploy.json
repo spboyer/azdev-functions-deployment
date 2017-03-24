@@ -19,6 +19,10 @@
             ],
             "defaultValue": "[resourceGroup().location]"
         },
+        "storageAccountName": {
+            "type": "string",
+            "maxLength": 24
+        },
         "storageAccountType": {
             "type": "string",
             "allowedValues": [
@@ -38,7 +42,7 @@
     },
     "variables": {
         "appServicePlanName": "[parameters('appName')]",
-        "storageAccountName": "[toLower(parameters('appName'))]",
+        "storageAccountName": "[toLower(parameters('storageAccountName'))]",
         "storageAccountType": "[parameters('storageAccountType')]",
         "storageAccountid": "[concat(resourceGroup().id,'/providers/','Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]",
         "storageLocation": "[parameters('location')]",

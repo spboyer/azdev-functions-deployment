@@ -5,6 +5,9 @@
       "appName": {
           "value": "myfunckytestdeploy"
       },
+      "storageAccountName":{
+          "value": "myfuncky"
+      },
       "storageAccountType": {
           "value": "Standard_LRS"
       },
