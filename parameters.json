@@ -12,7 +12,7 @@
           "value": "Standard_LRS"
       },
       "repoURL": {
-          "value": "https://github.com/spboyer/azdev-superhero-api.git"
+          "value": "https://github.com/spboyer/azdev-superhero-api"
       },
       "branch": {
           "value": "master"
