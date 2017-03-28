@@ -38,23 +38,25 @@ Example parameters
 
 Deploy using parameters file
 
-```javascript
+```bash
 az group create --name MyResourceGroup --location "East US"
- az group deployment create \
-     --name MyDeployment \
-     --resource-group MyResourceGroup \
-     --template-file azuredeploy.json \
-     --parameters @parameters.json
+
+az group deployment create --name MyDeployment --resource-group MyResourceGroup --template-file azuredeploy.json --parameters @parameters.json
 ```
 
 Deploy using command line parameters
 
-```javascript
+```bash
 az group create --name MyResourceGroup --location "East US"
- az group deployment create \
-     --name MyDeployment \
-     --resource-group MyResourceGroup \
-     --template-file azuredeploy.json \
-     --parameters '{"appName":{"value":"myfunckytestdeploy"},"storageAccountType":{"value":"Standard_LRS"},"repoURL":{"value":"https://github.com/spboyer/azdev-superhero-api.git"},"branch":{"value":"master"},"location":{"value":"East US"}}'
-     
+
+az group deployment create --name MyDeployment --resource-group MyResourceGroup --template-file azuredeploy.json \
+     --parameters '{"appName":{"value":"myfunckytestdeploy"},"storageAccountName":{"value":"myStorageName"},"storageAccountType":{"value":"Standard_LRS"},"repoURL":{"value":"https://github.com/spboyer/azdev-superhero-api.git"},"branch":{"value":"master"},"location":{"value":"East US"}}'
+
 ```
+
+
+---
+
+> [tattoocoder.com](https://tattoocoder.com) &nbsp;&middot;&nbsp;
+> GitHub [@spboyer](https://github.com/spboyer) &nbsp;&middot;&nbsp;
+> Twitter [@spboyer](https://twitter.com/spboyer)
